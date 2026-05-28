@@ -1,0 +1,17 @@
+[project]
+name = "taskweaver"
+version = "0.1.0"
+description = "教学版工作流引擎 — 基于 PaiFlow 架构的最简 Demo"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.0.0",
+    "sse-starlette>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "httpx>=0.27.0",
+]
